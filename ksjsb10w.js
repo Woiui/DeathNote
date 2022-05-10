@@ -239,8 +239,8 @@ let _0x134a17 = new Date(),
     _0x459e63 = 1.07,
     _0x2e716e = 0,
     _0x5bc515 = "ksjsb",
-    _0x180c0c = "https://ghproxy.com/https://raw.githubusercontent.com/Woiui/DeathNote/main/ks.json",//json
-    ksjsbjk = "https://ghproxy.com/https://raw.githubusercontent.com/Woiui/DeathNote/main/ksjsb.json",//json
+    _0x180c0c = "git.metauniverse-cn.com/https://raw.githubusercontent.com/Woiui/DeathNote/main/ks.json",//json
+    ksjsbjk = "git.metauniverse-cn.com/https://raw.githubusercontent.com/Woiui/DeathNote/main/ksjsb.json",//json
     _0x75eec0 = "https://127.0.0.1/";
 
 class _0x9d8dda {
