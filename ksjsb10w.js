@@ -1,7 +1,6 @@
 /*
-IOS/安卓： 快手极速版 0511.01
-0511版本更新，更新广告json，
-！！！10w脚本，新号理论会黑 老号跑过6w的不会黑 6w不黑10w也不会！！！
+IOS/安卓： 快手极速版 0511.003
+0511 9：00版本更新，更新广告json，修复错误。
 13:00之前跑990金币+990金币（预计跑完5-6次后0金币）
 13:00以后跑80金币+100金币（13点前的0金币后可跑这个）
 四组广告数据混合，提升收益的同时还降低黑号风险。
@@ -284,6 +283,7 @@ class _0x9d8dda {
       '2008': j
     };
     this["task"] = Z;
+
   }
 
   async ["getUserInfo"]() {
@@ -672,6 +672,7 @@ class _0x9d8dda {
     } else {
       console["log"]("账号[" + this["name"] + ']看' + p["name"] + "失败：" + B["error_msg"]);
     }
+    return;
   }
 
   async ["luckdrawInfo"]() {
@@ -809,6 +810,7 @@ class _0x9d8dda {
     } else {
       console["log"]("账号[" + this['name'] + "]查询抽奖页任务失败：" + S["error_msg"]);
     }
+    return;
   }
 
   async ["luckdrawTasksReward"](T) {
