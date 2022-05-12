@@ -1,8 +1,12 @@
 /*
-IOS/安卓： 快手极速版 0511.01
-0511版本更新，更新广告json，
-13:00之前跑990金币+990金币（预计跑完5-6次后0金币）
-13:00以后跑80金币+100金币（13点前的0金币后可跑这个）
+IOS/安卓： 快手极速版老号稳定版
+0512版本更新
+修复签名验证失败
+修复偶发taskRewardName报错问题
+内置热心网友的看广告json，已放本人仓库，无需代理，可直接开跑。
+四组广告数据混合，提升收益的同时还降低黑号风险。
+13:00之前跑990金币+99金币（预计跑完5-6次后0金币）
+13:00以后跑699金币+100金币（13点前的0金币后可跑这个）
 四组广告数据混合，提升收益的同时还降低黑号风险。
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ksjsbAggressive    全部提现功能1表示全部提现。
@@ -111,7 +115,7 @@ const _0x11b3c3 = "快手极速版",
 
 let _0x279d25 = '',
     _0x1a0963,
-    _0x4c35fe = ["\n", '@'],
+    _0x4c35fe = ["\n", '@', '&'],
     _0x547212 = (_0x3de8b8["isNode"]() ? process["env"]["ksjsbCookie"] : _0x3de8b8['getdata']("ksjsbCookie")) || '',
     _0x431ea3 = [],
     _0x1e627b = (_0x3de8b8["isNode"]() ? process["env"]["ksjsbCash"] : _0x3de8b8["getval"]("ksjsbCash")) || '',
@@ -120,7 +124,7 @@ let _0x279d25 = '',
     _0x113109 = (_0x3de8b8["isNode"]() ? process["env"]["ksjsbNotify"] : _0x3de8b8['getval']('ksjsbNotify')) || 1,
     _0x2863b1 = 0,
     _0x19c25c = 0,
-    _0xf2b084 = 12,
+    _0xf2b084 = 20,
     _0x5718d8 = [],
     yifenk = [];
 
@@ -159,7 +163,7 @@ const _0x1eb2d5 = {
   'invite': 2008
 },
       _0x3355c4 = {
-  'extParams': "56dfe31594b858e69ef613f5e97227fbe9979240d7caecf84db127b47a4a8bb0a744376361788e9d4f8341978842c3a723b72e4befa3dc60a2c580bf4fc43399f798f286e2c8c3069effa1db27aa45bd",
+  'extParams': "56dfe31594b858e69ef613f5e97227fb03493544e59e2b2a726006e2852ec1040cd969d4748c460ecf574cc487214a91f70592aa8b2225630027c39ca2c544027efa65815d1acea23cb503034b12641c",
   'businessId': 161,
   'pageId': 11101,
   'posId': 4683,
@@ -172,15 +176,15 @@ const _0x1eb2d5 = {
   'pageId': 11101,
   'posId': 4685,
   'subPageId': 100013630,
-  'name': "抽奖视频999"
+  'name': "抽奖视频990"
 },
       _0x124c4a = {
-  'extParams': "56dfe31594b858e69ef613f5e97227fb67b973ad1394855c549442d15702f96393178eaeef5635134bb7e4ff97e69218c1f18455baf645dbaef685b7bf30c0914ea53ddcde26b2fa67b888203dab0fd4",
+  'extParams': "56dfe31594b858e69ef613f5e97227fb2e82277a9c2a55fb8abc69671ac1719704be5d7e57a2b01d0bf5e6638ace22b910dee74365d1dcfa12634981cb43bc69a930709bc1f826ece28ff337f53c355b",
   'businessId': 161,
   'pageId': 11101,
   'posId': 4684,
   'subPageId': 100013629,
-  'name': '抽奖视频100'
+  'name': '抽奖视频699'
 },
       _0x37f16f = {
   'extParams': "56dfe31594b858e69ef613f5e97227fbe9979240d7caecf84db127b47a4a8bb0a744376361788e9d4f8341978842c3a723b72e4befa3dc60a2c580bf4fc43399f798f286e2c8c3069effa1db27aa45bd",
@@ -246,7 +250,7 @@ class _0x9d8dda {
   constructor(T) {
     let p = T["match"](/(kuaishou.api_st=[\w\-]+)/)[1] + ';';
     this["index"] = ++_0x2863b1;
-    this["cookie"] = "kpn=NEBULA; kpf=ANDROID_PHONE; did=ANDROID_" + _0x4b5cde(16) + "; ver=9.10; appver=9.10.40.2474; language=zh-cn; countryCode=CN; sys=ANDROID_5.1; client_key=2ac2a76d; " + p;
+    this["cookie"] = "kpn=NEBULA; kpf=ANDROID_PHONE; did=ANDROID_489512478efb574a; ver=9.10; appver=9.10.40.2474; language=zh-cn; countryCode=CN; sys=ANDROID_5.1; client_key=2ac2a76d; " + p;
     this["name"] = this["index"];
     this["valid"] = false;
     this["bindAlipay"] = false;
@@ -283,7 +287,6 @@ class _0x9d8dda {
       '2008': j
     };
     this["task"] = Z;
-
   }
 
   async ["getUserInfo"]() {
@@ -672,7 +675,6 @@ class _0x9d8dda {
     } else {
       console["log"]("账号[" + this["name"] + ']看' + p["name"] + "失败：" + B["error_msg"]);
     }
-    return;
   }
 
   async ["luckdrawInfo"]() {
@@ -810,7 +812,6 @@ class _0x9d8dda {
     } else {
       console["log"]("账号[" + this['name'] + "]查询抽奖页任务失败：" + S["error_msg"]);
     }
-    return;
   }
 
   async ["luckdrawTasksReward"](T) {
@@ -822,11 +823,18 @@ class _0x9d8dda {
     let a = _0x1a0963;
 
     if (!a) {
-      return;
+      return;     
+    }
+    
+    if(a['data']['popUp']==null){
+   console.log('taskRewardName'+'获取不到，重新定义继续往下跑')
+a['data']['popUp'] =[];
+a['data']['popUp']['taskRewardName'] ='';
+}
+    
+      a['result'] == 1 ? console["log"]("账号[" + this["name"] + "]领取抽奖任务[" + T["taskTitle"] + "]奖励获得" + a["data"]["popUp"]["taskRewardName"]) : console["log"]("账号[" + this["name"] + "]领取抽奖任务[" + T["taskTitle"] + "]奖励失败：" + a["error_msg"]);
     }
 
-    a['result'] == 1 ? console["log"]("账号[" + this["name"] + "]领取抽奖任务[" + T["taskTitle"] + "]奖励获得" ) : console["log"]("账号[" + this["name"] + "]领取抽奖任务[" + T["taskTitle"] + "]奖励失败：" + a["error_msg"]);
-  }
 
   async ["helpInvite"](T) {
     let p = T["split"]('&'),
@@ -979,7 +987,7 @@ class _0x9d8dda {
 
       if (Z["task"][_0x1e4967["luckydraw"]]["needRun"]) {
         for (let U = 0; U < Z["task"][_0x1e4967["luckydraw"]]["num"]; U++) {
-          _0x20a9d7 < 13 ? (await Z["ksNeoAdParam"](_0x10d9f8["luckdrawVideo_161_213"]), await _0x3de8b8["wait"](200), await Z["ksNeoAdParam"](_0x10d9f8["luckdrawVideo_11_213"]), await _0x3de8b8["wait"](200)) : (await Z["ksNeoAdParam"](_0x10d9f8["luckdrawVideo_161_100"]), await _0x3de8b8["wait"](200), await Z["ksNeoAdParam"](_0x10d9f8["luckdrawVideo_11_100"]), await _0x3de8b8['wait'](200));
+          await Z["ksNeoAdParam"](_0x10d9f8["luckdrawVideo_161_213"]), await _0x3de8b8["wait"](200), await Z["ksNeoAdParam"](_0x10d9f8["luckdrawVideo_11_213"]), await _0x3de8b8["wait"](200),await Z["ksNeoAdParam"](_0x10d9f8["luckdrawVideo_161_100"]), await _0x3de8b8["wait"](200), await Z["ksNeoAdParam"](_0x10d9f8["luckdrawVideo_11_100"]), await _0x3de8b8['wait'](200);
         }
       }
 
@@ -1147,7 +1155,7 @@ async function _0x282ff5(T) {
 
 async function _0x505e51() {
   const c = {
-    'url': _0x180c0c,
+    'url': "https://ghproxy.com/https://raw.githubusercontent.com/Woiui/DeathNote/main/ks.json",
     'headers': ''
   };
   await _0x39a23b("get", c);
@@ -1163,7 +1171,7 @@ async function _0x505e51() {
     if (a["status"] == 0) {
       if (_0x459e63 >= a["version"]) {
         _0x2e716e = true;
-        _0x75eec0 = "https://ghproxy.com/https://raw.githubusercontent.com/Woiui/DeathNote/main/ksjsb.json";
+        _0x75eec0 = "https://127.0.0.1/";
         console["log"](a["msg"][a["status"]]);
         console['log'](a["updateMsg"]);
         console["log"]("现在运行的脚本版本是：1.07，最新脚本版本：" + a["latestVersion"]);
@@ -1181,7 +1189,7 @@ async function _0x505e51() {
 async function _0x217ea6() {
   let c = '';
   const p = {
-    'url': _0x180c0c,
+    'url': "https://ghproxy.com/https://raw.githubusercontent.com/Woiui/DeathNote/main/ks.json",
     'headers': ''
   };
   await _0x39a23b("get", p);
