@@ -252,7 +252,7 @@ class _0x9d8dda {
   constructor(T) {
     let p = T["match"](/(kuaishou.api_st=[\w\-]+)/)[1] + ';';
     this["index"] = ++_0x2863b1;
-    this["cookie"] = "kpn=NEBULA; kpf=ANDROID_PHONE; did=ANDROID_749512047efb574a; ver=9.10; appver=9.10.40.2474; language=zh-cn; countryCode=CN; sys=ANDROID_10; client_key=2ac2a76d; " + p;
+    this["cookie"] = "kpn=NEBULA; kpf=ANDROID_PHONE; did=ANDROID_749512047efb574a; ver=10.0; appver=10.0.40.2474; language=zh-cn; countryCode=CN; sys=ANDROID_10; client_key=2ac2a76d; " + p;
     this["name"] = this["index"];
     this["valid"] = false;
     this["bindAlipay"] = false;
